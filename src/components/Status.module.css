@@ -1,0 +1,132 @@
+.container {
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #444;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.errorMessage {
+  background-color: #ffeeee;
+  color: #cc0000;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.loadingMessage,
+.emptyMessage {
+  margin: 20px 0;
+  color: #666;
+  text-align: center;
+}
+
+.refreshButton {
+  margin-bottom: 15px;
+  background-color: #707070;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.refreshButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  max-height: calc(100vh - 150px);
+}
+
+.credentialsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.credentialsTable th,
+.credentialsTable td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.credentialsTable th {
+  background-color: #666;
+  color: white;
+  font-weight: bold;
+}
+
+.verified {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  background-color: #008000;
+  color: white;
+}
+
+.pending {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  background-color: #cc7700;
+  color: white;
+}
+
+.verifiedRow {
+  background-color: rgba(0, 128, 0, 0.05);
+}
+
+.idCell {
+  max-width: 200px;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #d0d0d0;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.detailsButton {
+  background-color: #4c78af;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.detailsButton:hover {
+  background-color: #3a5d89;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .credentialsTable th,
+  .credentialsTable td {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+}
