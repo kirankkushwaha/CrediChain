@@ -39,7 +39,7 @@ Ethereum: MetaMask, Hardhat Local Network (chainId: 31337)
 
 ⚙️ Installation & Setup
 
-git clone https://github.com/your-repo/CrediChain.git
+git clone https://github.com/kirankkushwaha/CrediChain
 
 cd CrediChain
 
